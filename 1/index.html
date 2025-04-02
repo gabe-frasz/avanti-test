@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <title>AVANTI Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="relative w-full min-h-screen">
+    <header class="sticky top-0 flex flex-col justify-center items-center bg-white z-50">
+      <section
+        class="w-full py-1 flex justify-center items-center bg-primary-500 text-white"
+      >
+        <p class="font-bold text-sm text-center">
+          Ganhe
+          <strong class="px-0.5 bg-secondary-500 font-bold">R$10,00</strong> de
+          desconto no seu primeiro pedido. <br class="lg:hidden" />
+          Utilize o cupom DESCONTO10
+        </p>
+      </section>
+
+      <section class="w-full max-w-7xl flex flex-col justify-center items-center">
+        <div class="w-full px-4 py-6 flex justify-between items-center">
+          <button class="cursor-pointer lg:hidden">
+            <img src="assets/menu.svg" alt="menu" />
+          </button>
+
+          <h1 class="sr-only">AVANTI</h1>
+
+          <a href="#" class="lg:mr-16">
+            <img src="assets/avanti-logo.svg" alt="AVANTI logo" />
+          </a>
+
+          <div class="hidden lg:flex gap-1 rounded-lg border border-[#DDDDDD] lg:mr-auto lg:flex-1 lg:max-w-[594px]">
+            <input
+              type="text"
+              name="q"
+              placeholder="Digite aqui o que você procura"
+              class="ml-5 my-2 flex-1 placeholder-black focus:outline-none"
+            />
+            <button
+              class="w-10 flex justify-center items-center cursor-pointer"
+            >
+              <img src="assets/magnifier.svg" alt="lupa" />
+            </button>
+          </div>
+
+          <button class="hidden mr-6 cursor-pointer lg:flex items-center gap-2">
+            <img src="assets/client.svg" alt="icone de cliente" />
+
+            <span class="font-semibold text-left text-sm/3">Olá, <br />Nome cliente!</span>
+          </button>
+
+          <button class="relative cursor-pointer">
+            <span
+              class="absolute -top-2 -right-2 w-5 h-5 bg-primary-500 rounded-full font-semibold text-xs text-white flex justify-center items-center select-none"
+            >
+              2
+            </span>
+            <img src="assets/cart.svg" alt="carrinho" />
+          </button>
+        </div>
+
+        <div class="w-full p-4 lg:hidden">
+          <div class="flex gap-1 rounded-lg border border-[#DDDDDD]">
+            <input
+              type="text"
+              name="q"
+              placeholder="Digite aqui o que você procura"
+              class="ml-5 my-2 flex-1 placeholder-black focus:outline-none"
+            />
+            <button
+              class="w-10 flex justify-center items-center cursor-pointer"
+            >
+              <img src="assets/magnifier.svg" alt="lupa" />
+            </button>
+          </div>
+        </div>
+
+        <nav class="hidden w-full mb-4 px-4 lg:flex gap-2 justify-between items-center *:text-sm *:cursor-pointer">
+          <button id="menu-button" class="flex justify-center items-center gap-2 font-bold">
+            <img src="assets/menu-desktop.svg" alt="menu" />
+            Todas as Categorias
+          </button>
+
+          <button>Departamento</button>
+          <button>Departamento</button>
+          <button>Departamento</button>
+          <button>Departamento</button>
+          <button>Departamento</button>
+          <button>Departamento</button>
+          <button>Departamento</button>
+          <button>Departamento</button>
+        </nav>
+
+      </section>
+    </header>
+
+    <div
+      id="menu" 
+      class="hidden fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 py-5 lg:flex justify-between bg-white text-sm transition opacity-0 z-25"
+    >
+      <menu class="w-[190px] max-h-[292px] mr-8 flex flex-col gap-3 text-[#303030] overflow-y-auto">
+        <li class="font-bold text-primary-500">
+          <a href="#" class="flex justify-between items-center">
+            Departamento <img src="assets/right-arrow-active.svg" alt="seta para a direita" />
+          </a>
+        </li>
+
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex justify-between items-center">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+      </menu>
+
+      <div class="flex gap-32">
+        <ul class="flex flex-col gap-3 text-[#656565]">
+          <li class="font-bold text-primary-500">Categoria</li>
+
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+        </ul>
+
+        <ul class="flex flex-col gap-3 text-[#656565]">
+          <li class="font-bold text-primary-500">Categoria</li>
+
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+        </ul>
+
+        <ul class="flex flex-col gap-3 text-[#656565]">
+          <li class="font-bold text-primary-500">Categoria</li>
+
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+          <li>Categoria</li>
+        </ul>
+      </div>
+
+      <div class="relative ml-auto">
+        <picture>
+          <source srcset="assets/second-banner.png" media="(max-width: 1023px)" />
+          <source srcset="assets/second-banner-desktop.png" media="(min-width: 1024px)" />
+          <img src="assets/second-banner.png" alt="caneca AVANTI" class="w-full max-w-[298px] rounded-[10px]" />
+        </picture>
+
+        <div class="absolute top-0 left-0 w-full h-full bg-linear-to-r from-transparent to-black/75 rounded-[10px]"></div>
+
+        <div class="absolute top-14 left-10 max-w-[125px] flex flex-col gap-9 text-white">
+          <p class="text-2xl/7">
+            Confira os Produtos <strong>Que acabaram De chegar</strong>
+          </p>
+
+          <a href="#" class="w-29 h-9 flex justify-center items-center border border-white rounded-lg font-bold text-xs uppercase hover:text-black hover:bg-white transition-colors">
+            Ver todos
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="relative w-full">
+        <div class="absolute sm:hidden bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
+          <button class="w-2 h-2 rounded-full bg-[#303030] cursor-pointer">
+          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+        </div>
+
+        <picture>
+          <source srcset="assets/promo-banner.png" media="(max-width: 640px)" />
+          <source srcset="assets/promo-banner-desktop.png" media="(min-width: 641px)" />
+          <img
+            src="assets/promo-banner.png"
+            alt="banner promocional"
+            class="w-full"
+          />
+        </picture>
+      </section>
+
+      <section class="relative w-full max-w-7xl mx-auto px-4 py-14 lg:py-24 flex flex-col justify-center items-center">
+        <div class="w-full mb-4 flex justify-between items-center">
+          <h2 class="font-bold lg:text-xl">Lançamentos</h2>
+
+          <a href="#" class="font-bold text-sm underline">Ver mais</a>
+        </div>
+
+        <ul class="w-full flex gap-2 lg:gap-4 overflow-x-hidden *:min-w-[calc(100%/2-8px)] sm:*:min-w-[calc(100%/3-8px)] md:*:min-w-[calc(100%/4-8px)] lg:*:min-w-[calc(100%/5-16px)]">
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+              
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+        </ul>
+
+        <button class="absolute hidden lg:block left-0 top-1/2 -translate-y-1/2 cursor-pointer">
+          <img src="assets/left-circle-arrow.svg" alt="seta para a esquerda"/>
+        </button>
+
+        <button class="absolute hidden lg:block right-0 top-1/2 -translate-y-1/2 cursor-pointer">
+          <img src="assets/right-circle-arrow.svg" alt="seta para a direita"/>
+        </button>
+
+        <div class="w-full flex justify-center items-center gap-2 mt-4">
+          <button class="w-2 h-2 rounded-full bg-[#303030] cursor-pointer">
+          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+        </div>
+      </section>
+
+      <article class="max-w-7xl mx-auto pb-14 lg:px-4 lg:flex justify-center items-center gap-9">
+        <picture>
+          <source srcset="assets/cup-banner.png" media="(max-width: 1023px)" />
+          <source srcset="assets/cup-banner-desktop.png" media="(min-width: 1024px)" />
+          <img src="assets/cup-banner.png" alt="caneca AVANTI" class="w-full" />
+        </picture>
+
+        <div class="w-full mt-8 px-6 lg:max-w-[536px]">
+          <h2 class="w-full text-left mb-4 font-bold text-2xl uppercase lg:text-3xl">Lorem Ipsum</h2>
+          
+          <p class="mb-4 text-left text-sm lg:hidden">
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+          </p>
+
+          <p class="text-left text-sm lg:hidden">
+            Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. 
+            Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim.
+            Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
+          </p>
+
+          <p class="hidden mb-4 text-left text-lg lg:block">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra.
+            Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+            Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum.
+            Fusce sagittis elit a libero commodo egestas efficitur id augue.
+          </p>
+
+
+          <p class="hidden text-left text-lg lg:block">
+            Duis consectetur metus nec lacus auctor dignissim.
+            Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui,
+            in lobortis metus lacinia sit amet.
+            Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+            Maecenas fringilla porttitor tortor eget lacinia.
+            Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum.
+            Fusce sagittis elit a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </article>
+
+      <article class="w-full px-5 py-7 bg-[#DEDEDE] lg:py-12">
+        <div class="max-w-7xl mx-auto lg:flex flex-row-reverse items-center gap-12">
+          <picture class="flex-1">
+           <source srcset="assets/second-banner.png" media="(max-width: 1023px)" />
+           <source srcset="assets/second-banner-desktop.png" media="(min-width: 1024px)" />
+           <img src="assets/second-banner.png" alt="caneca AVANTI" class="w-full" />
+         </picture>
+  
+         <div class="mt-5 lg:text-[#4F4F4F] lg:flex-1">
+           <h2 class="mb-5 font-bold text-center text-xl uppercase lg:mb-12 lg:text-2xl">Lorem Ipsum</h2>
+  
+           <ul class="flex flex-col gap-6 text-xs lg:gap-12 lg:text-lg">
+             <li class="flex gap-3 items-center lg:gap-5">
+               <img src="assets/map-pin.svg" alt="pino de mapa" class="p-4 bg-primary-500 rounded-full" />
+  
+               <p>
+                 Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+               </p>
+             </li>
+  
+             <li class="flex gap-3 items-center lg:gap-5">
+               <img src="assets/map-pin.svg" alt="pino de mapa" class="p-4 bg-primary-500 rounded-full" />
+
+               <p>
+                 Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+               </p>
+             </li>
+
+             <li class="flex gap-3 items-center lg:gap-5">
+               <img src="assets/map-pin.svg" alt="pino de mapa" class="p-4 bg-primary-500 rounded-full" />
+  
+               <p>
+                 Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+               </p>
+             </li>
+           </ul>
+         </div>
+      </article>
+
+     <article class="max-w-7xl mx-auto py-14 lg:px-4 lg:pt-12 lg:pb-16 lg:flex justify-center items-center gap-9">
+        <picture>
+          <source srcset="assets/cup-banner.png" media="(max-width: 1023px)" />
+          <source srcset="assets/cup-banner-desktop.png" media="(min-width: 1024px)" />
+          <img src="assets/cup-banner.png" alt="caneca AVANTI" class="w-full" />
+        </picture>
+
+        <div class="w-full mt-8 px-6 lg:max-w-[536px]">
+          <h2 class="w-full text-left mb-4 font-bold text-2xl uppercase lg:text-3xl">Lorem Ipsum</h2>
+          
+          <p class="mb-4 text-left text-sm lg:hidden">
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+          </p>
+
+          <p class="text-left text-sm lg:hidden">
+            Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. 
+            Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim.
+            Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
+          </p>
+
+          <p class="hidden mb-4 text-left text-lg lg:block">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra.
+            Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+            Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum.
+            Fusce sagittis elit a libero commodo egestas efficitur id augue.
+          </p>
+
+
+          <p class="hidden text-left text-lg lg:block">
+            Duis consectetur metus nec lacus auctor dignissim.
+            Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui,
+            in lobortis metus lacinia sit amet.
+            Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+            Maecenas fringilla porttitor tortor eget lacinia.
+            Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum.
+            Fusce sagittis elit a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </article>
+
+      <section class="hidden lg:block relative w-full max-w-7xl mb-16 mx-auto px-4 flex flex-col justify-center items-center">
+        <div class="w-full mb-4 flex justify-between items-center">
+          <h2 class="font-bold text-xl">Lançamentos</h2>
+
+          <a href="#" class="font-bold text-sm underline">Ver mais</a>
+        </div>
+
+        <ul class="w-full flex gap-2 lg:gap-4 overflow-x-hidden *:min-w-[calc(100%/2-8px)] sm:*:min-w-[calc(100%/3-8px)] md:*:min-w-[calc(100%/4-8px)] lg:*:min-w-[calc(100%/5-16px)]">
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+              
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
+            <a href="#">
+              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
+                NOVO
+              </strong>
+
+              <picture>
+                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
+                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
+                <img
+                  src="assets/avanti-product-mockup.png"
+                  alt="mockup do produto"
+                  class="w-full"
+                />
+              </picture>
+
+              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+
+              <div class="mt-2 flex gap-3 text-sm">
+                <div class="flex flex-col">
+                  <span class="text-xs line-through"> R$ 100</span>
+
+                  <strong class="font-bold">R$79,90</strong>
+                </div>
+                
+                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
+                  10% OFF
+                </strong>
+              </div>
+
+              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
+
+              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
+            </a>
+          </li>
+        </ul>
+
+        <button class="absolute hidden lg:block left-0 top-1/2 -translate-y-1/2 cursor-pointer">
+          <img src="assets/left-circle-arrow.svg" alt="seta para a esquerda"/>
+        </button>
+
+        <button class="absolute hidden lg:block right-0 top-1/2 -translate-y-1/2 cursor-pointer">
+          <img src="assets/right-circle-arrow.svg" alt="seta para a direita"/>
+        </button>
+
+        <div class="w-full flex justify-center items-center gap-2 mt-4">
+          <button class="w-2 h-2 rounded-full bg-[#303030] cursor-pointer">
+          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+        </div>
+      </section>
+
+      <picture>
+        <source srcset="assets/forth-banner.png" media="(max-width: 1023px)" />
+        <source srcset="assets/forth-banner-desktop.png" media="(min-width: 1024px)" />
+        <img src="assets/forth-banner.png" alt="fundo de uma sala da AVANTI" class="w-full" />
+      </picture>
+
+      <section class="max-w-7xl mx-auto mt-14 mb-10 px-4 lg:mt-16">
+        <h2 class="mb-4 font-bold text-center lg:text-xl lg:mb-6">Cadastre-se na nossa <em class="not-italic text-primary-500">newsletter</em></h2>
+
+        <form class="px-4 py-9 flex flex-col items-center gap-4 bg-[#F5F5F5] rounded-lg lg:flex-row lg:gap-6 lg:bg-[#DEDEDE] lg:p-16">
+          <input
+            type="text"
+            name="nome"
+            placeholder="Digite seu nome"
+            class="w-full h-12 px-3 bg-white rounded-lg placeholder:text-[#303030] focus:outline-none"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Digite seu email"
+            autocomplete="true"
+            class="w-full h-12 px-3 bg-white rounded-lg placeholder:text-[#303030] focus:outline-none"
+          />
+
+          <label class="flex items-center gap-2 lg:flex-shrink-0">
+            <input type="checkbox" name="termos" class="w-4 h-4" />
+            <span class="w-fit text-xs text-[#656565] select-none">
+              Eu estou de acordo com a <a href="#" class="underline">Política de Privacidade</a>
+            </span>
+          </label>
+
+          <button
+            type="submit"
+            class="w-full h-12 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold lg:max-w-[120px]"
+          >
+            Cadastrar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="max-w-7xl mx-auto pt-10">
+      <div class="flex justify-center items-center">
+        <div class="mb-12 flex flex-col justify-center items-center gap-10 lg:items-start lg:mr-24 lg:px-4">
+          <a href="#" class="">
+            <img src="assets/avanti-logo.svg" alt="AVANTI logo" />
+          </a>
+
+          <div class="flex items-center gap-10">
+            <a href="https://www.instagram.com/penseavanti/" target="_blank">
+              <img src="assets/instagram.svg" alt="instagram" />
+            </a>
+
+            <a href="#">
+              <img src="assets/facebook.svg" alt="facebook" />
+            </a>
+
+            <a href="https://www.youtube.com/@penseavanti/videos" target="_blank">
+              <img src="assets/youtube.svg" alt="youtube" />
+            </a>
+
+            <a href="#">
+              <img src="assets/tiktok.svg" alt="tiktok" />
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden mb-16 text-sm/7 lg:flex lg:gap-18">
+          <div>
+            <h3 class="mb-4 font-bold">Institucional</h3>
+
+            <h4><a href="#">Sobre Nós</a></h4>
+            <h4><a href="#">Nossas Lojas</a></h4>
+            <h4><a href="#">Privacidade e Segurança</a></h4>
+            <h4><a href="#">Termos e Condições</a></h4>
+          </div>
+
+          <div>
+            <h3 class="mb-4 font-bold">Central de ajuda</h3>
+
+            <h4><a href="#">Fale Conosco</a></h4>
+            <h4><a href="#">Frete e Entrega</a></h4>
+            <h4><a href="#">Trocas e Devoluções</a></h4>
+            <h4><a href="#">Formas de Pagamento</a></h4>
+            <h4><a href="#">FAQ</a></h4>
+          </div>
+
+          <div>
+            <h3 class="mb-4 font-bold">Atendimento</h3>
+
+            <h4><a href="tel:(00)1234-5678"><span class="font-bold">Telefone:</span> (00) 1234-5678</a></h4>
+            <h4><a href="mailto:exemplo@exemplo.com.br"><span class="font-bold">E-mail:</span> exemplo@exemplo.com.br</a></h4>
+            <h4 class="text-xs">
+              <span class="font-bold">Horário de Atendimento</span>: <br />
+              Segunda a Sabado: 07h00 às 23h00 <br />
+              Domingos e Feriados: 07h00 às 21h00
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-12 *:border-t *:border-[#DDDDDD] lg:hidden">
+        <div class="w-full p-4 flex justify-between items-center cursor-pointer">
+          <h3 class="font-bold">Institucional</h3>
+
+          <button>
+            <img src="assets/arrow-down.svg" alt="menu" />
+          </button>
+        </div>
+
+        <div class="w-full p-4 flex justify-between items-center cursor-pointer">
+          <h3 class="font-bold">Central de ajuda</h3>
+
+          <button>
+            <img src="assets/arrow-down.svg" alt="menu" />
+          </button>
+        </div>
+
+        <div class="w-full p-4 flex justify-between items-center cursor-pointer border-b border-[#DDDDDD]">
+          <h3 class="font-bold">Atendimento</h3>
+
+          <button>
+            <img src="assets/arrow-down.svg" alt="menu" />
+          </button>
+        </div>
+      </div>
+
+      <picture>
+        <source srcset="assets/payment-methods.svg" media="(max-width: 1023px)" />
+        <source srcset="assets/payment-methods-desktop.svg" media="(min-width: 1024px)" />
+        <img src="assets/payment-methods.svg" alt="métodos de pagamento" class="mx-auto mb-10 lg:mb-16" />
+      </picture>
+
+      <div class="max-w-[1074px] mx-auto px-4 pt-10 pb-4 text-center text-xs text-[#303030]">
+        <p class="mb-10 lg:hidden">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+          sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          Ut wisi enim ad minim veniam, quis nostrud exerci.
+        </p>
+
+        <p class="hidden mb-10 lg:block">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+          nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+          vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+          qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+
+        <img src="assets/avanti-footer.png" alt="AVANTI footer" class="mx-auto" />
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
