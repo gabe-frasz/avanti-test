@@ -1,4 +1,4 @@
-document.querySelectorAll(".product-slider").forEach((slider, index) => {
+document.querySelectorAll(".product-slider").forEach((slider) => {
   const track = slider.querySelector("ul");
   for (let i = 0; i < 14; i++) {
     const slide = slider.querySelector("ul>li");
