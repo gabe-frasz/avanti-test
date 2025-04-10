@@ -32,7 +32,7 @@
 
       <section class="w-full max-w-7xl flex flex-col justify-center items-center">
         <div class="w-full px-4 py-6 flex justify-between items-center">
-          <button class="cursor-pointer lg:hidden">
+          <button id="menu-button-mobile" class="cursor-pointer lg:hidden">
             <img src="assets/menu.svg" alt="menu" />
           </button>
 
@@ -106,6 +106,35 @@
 
       </section>
     </header>
+
+    <div id="menu-mobile" class="fixed top-0 left-0 w-full h-screen px-4 pt-56 bg-white transition-all duration-300 ease-in-out -translate-x-1/4 opacity-0 z-45">
+      <menu class="flex flex-col gap-4 font-semibold text-lg">
+        <li class="flex items-center gap-4">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex items-center gap-4">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex items-center gap-4">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex items-center gap-4">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex items-center gap-4">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex items-center gap-4">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex items-center gap-4">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+        <li class="flex items-center gap-4">
+          Departamento <img src="assets/right-arrow.svg" alt="seta para a direita" />
+        </li>
+      </menu>
+    </div>
 
     <div
       id="menu" 
@@ -241,7 +270,8 @@
           <a href="#" class="font-bold text-sm underline">Ver mais</a>
         </div>
 
-        <ul class="w-full flex gap-2 lg:gap-4 overflow-x-hidden *:min-w-[calc(100%/2-8px)] sm:*:min-w-[calc(100%/3-8px)] md:*:min-w-[calc(100%/4-8px)] lg:*:min-w-[calc(100%/5-16px)]">
+        <div data-slider="1" class="product-slider w-full overflow-x-hidden">
+        <ul class="flex gap-2 lg:gap-4 *:min-w-[calc(100%/2-8px)] sm:*:min-w-[calc(100%/3-8px)] md:*:min-w-[calc(100%/4-8px)] lg:*:min-w-[calc(100%/5-16px)] transition-transform duration-300 ease-in-out">
           <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
             <a href="#">
               <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
@@ -277,160 +307,21 @@
               <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
             </a>
           </li>
-          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
-            <a href="#">
-              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
-                NOVO
-              </strong>
+          </ul>
 
-              <picture>
-                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
-                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
-                <img
-                  src="assets/avanti-product-mockup.png"
-                  alt="mockup do produto"
-                  class="w-full"
-                />
-              </picture>
+          <button id="prev" class="absolute hidden lg:block left-0 top-1/2 -translate-y-1/2 cursor-pointer">
+            <img src="assets/left-circle-arrow.svg" alt="seta para a esquerda"/>
+          </button>
 
-              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+          <button id="next" class="absolute hidden lg:block right-0 top-1/2 -translate-y-1/2 cursor-pointer">
+            <img src="assets/right-circle-arrow.svg" alt="seta para a direita"/>
+          </button>
+        </div>
 
-              <div class="mt-2 flex gap-3 text-sm">
-                <div class="flex flex-col">
-                  <span class="text-xs line-through"> R$ 100</span>
-
-                  <strong class="font-bold">R$79,90</strong>
-                </div>
-                
-                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
-                  10% OFF
-                </strong>
-              </div>
-
-              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
-
-              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
-            </a>
-          </li>
-          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
-            <a href="#">
-              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
-                NOVO
-              </strong>
-
-              <picture>
-                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
-                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
-                <img
-                  src="assets/avanti-product-mockup.png"
-                  alt="mockup do produto"
-                  class="w-full"
-                />
-              </picture>
-              
-              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
-
-              <div class="mt-2 flex gap-3 text-sm">
-                <div class="flex flex-col">
-                  <span class="text-xs line-through"> R$ 100</span>
-
-                  <strong class="font-bold">R$79,90</strong>
-                </div>
-                
-                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
-                  10% OFF
-                </strong>
-              </div>
-
-              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
-
-              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
-            </a>
-          </li>
-          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
-            <a href="#">
-              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
-                NOVO
-              </strong>
-
-              <picture>
-                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
-                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
-                <img
-                  src="assets/avanti-product-mockup.png"
-                  alt="mockup do produto"
-                  class="w-full"
-                />
-              </picture>
-
-              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
-
-              <div class="mt-2 flex gap-3 text-sm">
-                <div class="flex flex-col">
-                  <span class="text-xs line-through"> R$ 100</span>
-
-                  <strong class="font-bold">R$79,90</strong>
-                </div>
-                
-                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
-                  10% OFF
-                </strong>
-              </div>
-
-              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
-
-              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
-            </a>
-          </li>
-          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
-            <a href="#">
-              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
-                NOVO
-              </strong>
-
-              <picture>
-                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
-                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
-                <img
-                  src="assets/avanti-product-mockup.png"
-                  alt="mockup do produto"
-                  class="w-full"
-                />
-              </picture>
-
-              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
-
-              <div class="mt-2 flex gap-3 text-sm">
-                <div class="flex flex-col">
-                  <span class="text-xs line-through"> R$ 100</span>
-
-                  <strong class="font-bold">R$79,90</strong>
-                </div>
-                
-                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
-                  10% OFF
-                </strong>
-              </div>
-
-              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
-
-              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
-            </a>
-          </li>
-        </ul>
-
-        <button class="absolute hidden lg:block left-0 top-1/2 -translate-y-1/2 cursor-pointer">
-          <img src="assets/left-circle-arrow.svg" alt="seta para a esquerda"/>
-        </button>
-
-        <button class="absolute hidden lg:block right-0 top-1/2 -translate-y-1/2 cursor-pointer">
-          <img src="assets/right-circle-arrow.svg" alt="seta para a direita"/>
-        </button>
-
-        <div class="w-full flex justify-center items-center gap-2 mt-4">
-          <button class="w-2 h-2 rounded-full bg-[#303030] cursor-pointer">
-          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
-          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+        <div id="slider-dots" data-dots-for="1" class="w-full flex justify-center items-center gap-2 mt-4">
+          <button data-index="0" class="w-2 h-2 rounded-full bg-[#303030] cursor-pointer"></button>
+          <button data-index="1" class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer"></button>
+          <button data-index="2" class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer"></button>
         </div>
       </section>
 
@@ -565,7 +456,8 @@
           <a href="#" class="font-bold text-sm underline">Ver mais</a>
         </div>
 
-        <ul class="w-full flex gap-2 lg:gap-4 overflow-x-hidden *:min-w-[calc(100%/2-8px)] sm:*:min-w-[calc(100%/3-8px)] md:*:min-w-[calc(100%/4-8px)] lg:*:min-w-[calc(100%/5-16px)]">
+        <div data-slider="2" class="product-slider w-full overflow-x-hidden">
+        <ul class="flex gap-2 lg:gap-4 *:min-w-[calc(100%/2-8px)] sm:*:min-w-[calc(100%/3-8px)] md:*:min-w-[calc(100%/4-8px)] lg:*:min-w-[calc(100%/5-16px)] transition-transform duration-300 ease-in-out">
           <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
             <a href="#">
               <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
@@ -601,157 +493,18 @@
               <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
             </a>
           </li>
-          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
-            <a href="#">
-              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
-                NOVO
-              </strong>
+          </ul>
 
-              <picture>
-                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
-                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
-                <img
-                  src="assets/avanti-product-mockup.png"
-                  alt="mockup do produto"
-                  class="w-full"
-                />
-              </picture>
+          <button id="prev" class="absolute hidden lg:block left-0 top-1/2 -translate-y-1/2 cursor-pointer">
+            <img src="assets/left-circle-arrow.svg" alt="seta para a esquerda"/>
+          </button>
 
-              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+          <button id="next" class="absolute hidden lg:block right-0 top-1/2 -translate-y-1/2 cursor-pointer">
+            <img src="assets/right-circle-arrow.svg" alt="seta para a direita"/>
+          </button>
+        </div>
 
-              <div class="mt-2 flex gap-3 text-sm">
-                <div class="flex flex-col">
-                  <span class="text-xs line-through"> R$ 100</span>
-
-                  <strong class="font-bold">R$79,90</strong>
-                </div>
-                
-                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
-                  10% OFF
-                </strong>
-              </div>
-
-              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
-
-              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
-            </a>
-          </li>
-          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
-            <a href="#">
-              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
-                NOVO
-              </strong>
-
-              <picture>
-                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
-                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
-                <img
-                  src="assets/avanti-product-mockup.png"
-                  alt="mockup do produto"
-                  class="w-full"
-                />
-              </picture>
-              
-              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
-
-              <div class="mt-2 flex gap-3 text-sm">
-                <div class="flex flex-col">
-                  <span class="text-xs line-through"> R$ 100</span>
-
-                  <strong class="font-bold">R$79,90</strong>
-                </div>
-                
-                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
-                  10% OFF
-                </strong>
-              </div>
-
-              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
-
-              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
-            </a>
-          </li>
-          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
-            <a href="#">
-              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
-                NOVO
-              </strong>
-
-              <picture>
-                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
-                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
-                <img
-                  src="assets/avanti-product-mockup.png"
-                  alt="mockup do produto"
-                  class="w-full"
-                />
-              </picture>
-
-              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
-
-              <div class="mt-2 flex gap-3 text-sm">
-                <div class="flex flex-col">
-                  <span class="text-xs line-through"> R$ 100</span>
-
-                  <strong class="font-bold">R$79,90</strong>
-                </div>
-                
-                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
-                  10% OFF
-                </strong>
-              </div>
-
-              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
-
-              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
-            </a>
-          </li>
-          <li class="relative p-2 border border-[#DDDDDD] rounded-lg">
-            <a href="#">
-              <strong class="absolute top-2 left-2 px-1 py-0.5 bg-primary-700 rounded-sm font-bold text-[0.625rem] text-white">
-                NOVO
-              </strong>
-
-              <picture>
-                <source srcset="assets/avanti-product-mockup.png" media="(max-width: 640px)" />
-                <source srcset="assets/avanti-product-mockup-desktop.png" media="(min-width: 641px)" />
-                <img
-                  src="assets/avanti-product-mockup.png"
-                  alt="mockup do produto"
-                  class="w-full"
-                />
-              </picture>
-
-              <h3 class="mt-2 text-sm">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
-
-              <div class="mt-2 flex gap-3 text-sm">
-                <div class="flex flex-col">
-                  <span class="text-xs line-through"> R$ 100</span>
-
-                  <strong class="font-bold">R$79,90</strong>
-                </div>
-                
-                <strong class="h-fit px-2 py-1 bg-accent-500 rounded-sm font-bold text-[0.6875rem] text-white lg:underline">
-                  10% OFF
-                </strong>
-              </div>
-
-              <p class="text-xs">Ou em até <em class="font-bold">10x de R$ 7,90</em></p>
-
-              <button class="w-full mt-2 py-2 flex justify-center items-center bg-primary-500 rounded-lg text-white font-bold text-sm">Comprar</button>
-            </a>
-          </li>
-        </ul>
-
-        <button class="absolute hidden lg:block left-0 top-1/2 -translate-y-1/2 cursor-pointer">
-          <img src="assets/left-circle-arrow.svg" alt="seta para a esquerda"/>
-        </button>
-
-        <button class="absolute hidden lg:block right-0 top-1/2 -translate-y-1/2 cursor-pointer">
-          <img src="assets/right-circle-arrow.svg" alt="seta para a direita"/>
-        </button>
-
-        <div class="w-full flex justify-center items-center gap-2 mt-4">
+        <div id="slider-dots" data-dots-for="2" class="w-full flex justify-center items-center gap-2 mt-4">
           <button class="w-2 h-2 rounded-full bg-[#303030] cursor-pointer">
           <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
           <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
@@ -860,28 +613,72 @@
       </div>
 
       <div class="mb-12 *:border-t *:border-[#DDDDDD] lg:hidden">
-        <div class="w-full p-4 flex justify-between items-center cursor-pointer">
-          <h3 class="font-bold">Institucional</h3>
-
-          <button>
-            <img src="assets/arrow-down.svg" alt="menu" />
+        <div class="accordion w-full p-4">
+          <button class="accordion-header w-full flex justify-between items-center">
+            <h3 class="font-bold">Institucional</h3>
+            <img src="assets/arrow-down.svg" alt="seta para baixo" class="accordion-icon transition-transform duration-300" />
           </button>
+
+          <menu class="accordion-body max-h-0 text-sm space-y-1 overflow-hidden transition-all duration-300 ease-in-out">
+            <li class="mt-2">
+              <h4><a href="#">Sobre Nós</a></h4>
+            </li>
+            <li>
+              <h4><a href="#">Nossas Lojas</a></h4>
+            </li>
+            <li>
+              <h4><a href="#">Privacidade e Segurança</a></h4>
+            </li>
+            <li>
+              <h4><a href="#">Termos e Condições</a></h4>
+            </li>
+          </menu>
         </div>
 
-        <div class="w-full p-4 flex justify-between items-center cursor-pointer">
-          <h3 class="font-bold">Central de ajuda</h3>
-
-          <button>
-            <img src="assets/arrow-down.svg" alt="menu" />
+        <div class="accordion w-full p-4">
+          <button class="accordion-header w-full flex justify-between items-center">
+            <h3 class="font-bold">Central de ajuda</h3>
+            <img src="assets/arrow-down.svg" alt="seta para baixo" class="accordion-icon transition-transform duration-300" />
           </button>
+
+          <menu class="accordion-body max-h-0 text-sm space-y-1 overflow-hidden transition-all duration-300 ease-in-out">
+            <li class="mt-2">
+              <h4><a href="#">Fale Conosco</a></h4>
+            </li>
+            <li>
+              <h4><a href="#">Frete e Entrega</a></h4>
+            </li>
+            <li>
+              <h4><a href="#">Trocas e Devoluções</a></h4>
+            </li>
+            <li>
+              <h4><a href="#">Formas de Pagamento</a></h4>
+            </li>
+            <li>
+              <h4><a href="#">FAQ</a></h4>
+            </li>
+          </menu>
         </div>
 
-        <div class="w-full p-4 flex justify-between items-center cursor-pointer border-b border-[#DDDDDD]">
-          <h3 class="font-bold">Atendimento</h3>
-
-          <button>
-            <img src="assets/arrow-down.svg" alt="menu" />
+        <div class="accordion w-full p-4">
+          <button class="accordion-header w-full flex justify-between items-center">
+            <h3 class="font-bold">Atendimento</h3>
+            <img src="assets/arrow-down.svg" alt="seta para baixo" class="accordion-icon transition-transform duration-300" />
           </button>
+
+          <menu class="accordion-body max-h-0 text-sm space-y-1 overflow-hidden transition-all duration-300 ease-in-out">
+            <li class="mt-2">
+              <h4><a href="tel:(00)1234-5678"><span class="font-bold">Telefone:</span> (00) 1234-5678</a></h4>
+            </li>
+            <li>
+              <h4><a href="mailto:exemplo@exemplo.com.br"><span class="font-bold">E-mail:</span> exemplo@exemplo.com.br</a></h4>
+            </li>
+            <li class="text-xs">
+              <span class="font-bold">Horário de Atendimento</span>: <br />
+              Segunda a Sabado: 07h00 às 23h00 <br />
+              Domingos e Feriados: 07h00 às 21h00
+            </li>
+          </menu>
         </div>
       </div>
 
@@ -912,6 +709,8 @@
       </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="menu.js"></script>
+    <script src="slider.js"></script>
+    <script src="accordion.js"></script>
   </body>
 </html>
