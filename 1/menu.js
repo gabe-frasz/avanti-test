@@ -17,7 +17,7 @@ menuBtnDesktop.addEventListener("click", () => {
 });
 
 menuBtnMobile.addEventListener("click", () => {
-  const isOpen = !menuMobile.classList.toggle("-translate-x-1/4");
+  const isOpen = !menuMobile.classList.toggle("-translate-x-full");
   if (isOpen) {
     menuMobile.classList.remove("opacity-0");
     document.body.style.overflow = "hidden";
