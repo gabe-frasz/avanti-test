@@ -138,7 +138,7 @@
 
     <div
       id="menu" 
-      class="hidden fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 py-5 lg:flex justify-between bg-white text-sm transition opacity-0 z-25"
+      class="hidden fixed -top-full left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 py-5 lg:flex justify-between bg-white text-sm transition opacity-0 z-25"
     >
       <menu class="w-[190px] max-h-[292px] mr-8 flex flex-col gap-3 text-[#303030] overflow-y-auto">
         <li class="font-bold text-primary-500">
@@ -245,22 +245,44 @@
     </div>
 
     <main>
-      <section class="relative w-full">
-        <div class="absolute sm:hidden bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
-          <button class="w-2 h-2 rounded-full bg-[#303030] cursor-pointer">
-          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
-          <button class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+      <section id="banner" class="relative w-full overflow-hidden">
+        <div id="banner-track" class="flex *:flex-shrink-0 *:w-full transition-transform duration-300 ease-in-out">
+          <picture>
+            <source srcset="assets/promo-banner.png" media="(max-width: 640px)" />
+            <source srcset="assets/promo-banner-desktop.png" media="(min-width: 641px)" />
+            <img
+              src="assets/promo-banner.png"
+              alt="banner promocional"
+              class="w-full"
+            />
+          </picture>
+
+          <picture>
+            <source srcset="assets/promo-banner.png" media="(max-width: 640px)" />
+            <source srcset="assets/promo-banner-desktop.png" media="(min-width: 641px)" />
+            <img
+              src="assets/promo-banner.png"
+              alt="banner promocional"
+              class="w-full"
+            />
+          </picture>
+
+          <picture>
+            <source srcset="assets/promo-banner.png" media="(max-width: 640px)" />
+            <source srcset="assets/promo-banner-desktop.png" media="(min-width: 641px)" />
+            <img
+              src="assets/promo-banner.png"
+              alt="banner promocional"
+              class="w-full"
+            />
+          </picture>
         </div>
 
-        <picture>
-          <source srcset="assets/promo-banner.png" media="(max-width: 640px)" />
-          <source srcset="assets/promo-banner-desktop.png" media="(min-width: 641px)" />
-          <img
-            src="assets/promo-banner.png"
-            alt="banner promocional"
-            class="w-full"
-          />
-        </picture>
+        <div id="banner-dots" class="absolute sm:hidden bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
+          <button data-index="0" class="w-2 h-2 rounded-full bg-[#303030] cursor-pointer">
+          <button data-index="1" class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+          <button data-index="2" class="w-2 h-2 rounded-full bg-[#838383] cursor-pointer">
+        </div>
       </section>
 
       <section class="relative w-full max-w-7xl mx-auto px-4 py-14 lg:py-24 flex flex-col justify-center items-center">
@@ -710,6 +732,7 @@
     </footer>
 
     <script src="menu.js"></script>
+    <script src="banner.js"></script>
     <script src="slider.js"></script>
     <script src="accordion.js"></script>
   </body>
